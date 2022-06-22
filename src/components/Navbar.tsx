@@ -38,7 +38,18 @@ export default function NavBar() {
         <div className={classes.root}>
             <AppBar className={classes.appbar}>
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title}>DE-CODE</Typography>
+                    <Typography
+  className={classes.title}
+  variant="h6"
+  noWrap
+  component={Link}
+  to="/"
+  color="textPrimary"
+>
+  <Link href="https://www.megaflash.xyz" target="_parent" underline="none">
+    HOME
+  </Link>
+</Typography>
                     <IconButton onClick={handleShare}>
                         <Share/>
                     </IconButton>
